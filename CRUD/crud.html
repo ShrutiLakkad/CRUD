@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CRUD Operation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="crud.css" rel="stylesheet">
+        <!-- <link href="/crud.media" rel="stylesheet"> -->
+    </head>
+
+    <body onload="createTableRow();">
+      <div class="crud">
+        <div class="container">
+          
+          <div class="image">
+            <div class="color">
+<!-- <form> -->
+            <div class="form white ">
+                <label>Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form white">
+                <label>E-mail</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form white">
+                <label>Contact No</label>
+                <input type="text" name="no" id="no">
+            </div>
+            <div class="form white">
+                <label>Gender</label>
+                <input type="text" name="gender" id="gender">
+            </div>
+            <div class="form white">
+                <label>Age</label>
+                <input type="text" name="no" id="age">
+            </div>
+            <div class="dropdown white">
+                <p>Which is your favourite destination?</p>
+                <select id="dropdown" name="destination">
+                  <option disabled selected destination>Select current destination</option>
+                  <option value="Goa">photoshoot</option>
+                  <option value="Maldivs">beach</option>
+                  <option value="Bali">hotel</option>
+                  <option value="Shimla">fresh air</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="date">
+                <label class="date1 white" >Date Plan
+                <input type="date" id="date">
+                </label>
+             
+              
+              </div>
+
+
+              <div class="radiobtns white">
+                <p>Would you like this place?</p>
+                <label>
+                  <input name="user-recommend" value="Yes" type="radio" 
+                  class="input-radio" id="radiobtn" />Yes</label>
+
+                <label>
+                  <input name="user-recommend" value="No" type="radio"
+                    class="input-radio"/>No</label>
+              </div>
+
+
+              <div class="checkboxes white">
+                <p>Give the feedback...</p>
+          
+                <label>
+                    <input name="prefer" value="Excellent" id="checkbox" type="checkbox"
+                    class="input-checkbox"/>Excellent</label>
+
+                <label>
+                  <input name="prefer" value="Good"type="checkbox"
+                    class="input-checkbox"/>Good</label>
+
+
+                <label>
+                    <input name="prefer" value="Bad" type="checkbox"
+                    class="input-checkbox"/>Bad</label>
+          
+        </div>
+
+        <div class="img">
+          <input type="file" class="black" id="file-img">
+        </div>
+         
+        <div class="button white">
+            <button type="button" id="submit"  onclick="mydata();" class="submit-button">
+              Submit
+            </button>
+            <input type="reset" onclick="rst();">
+          </div>
+
+          </div>
+      
+            
+          <!-- </form> -->
+
+          <table id="tbl" border="1"> 
+              <th>Name</th>
+              <th>E-mail</th>
+              <th>Contact-no</th>
+              <th>Gender</th>
+              <th>Age</th>
+              <th>Destination</th>
+              <th>Date</th>
+               <th>Place</th>
+             
+              <th>Feedback</th>
+              <th>Image</th>
+              <th>Edit</th>
+              <th>Delete</th>
+              <tbody>
+
+              </tbody>
+          </table>
+          </div>
+
+
+        
+
+        </div>
+    <script src="./main.js"></script>
+    </div>
+    </body>
+    
+</html>
